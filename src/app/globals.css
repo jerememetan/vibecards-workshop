@@ -40,3 +40,55 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Clerk SignInButton styles */
+.cl-rootBox button {
+  padding: 0.625rem 1.25rem !important;
+  cursor: pointer !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 8px !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s !important;
+}
+
+.cl-rootBox button:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Main CTA button style */
+main .cl-rootBox button {
+  padding: 1rem 2.5rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  background-color: #fff !important;
+  color: #667eea !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+main .cl-rootBox button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2) !important;
+  background-color: #fff !important;
+}
+
+/* Dashboard link hover effect */
+.dashboard-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Deck link hover effect */
+.deck-link:hover {
+  background-color: #f5f5f5;
+}
+
+/* Back link hover effect */
+.back-link:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+  transform: translateX(-4px);
+}
