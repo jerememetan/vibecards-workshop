@@ -1,6 +1,7 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import FlappyBirdGame from '@/components/flappy-bird-game';
+import GameButtons from '@/components/game-buttons';
 
 export default function Home() {
   return (
@@ -84,14 +85,16 @@ export default function Home() {
             <div style={{
               textAlign: 'center',
               color: '#fff',
+              width: '100%',
             }}>
               <h3 style={{
                 fontSize: '1.5rem',
                 fontWeight: '700',
-                marginBottom: '1rem',
+                marginBottom: '1.5rem',
               }}>
-                🎮 Try Flappy Cards!
+                🎮 Play Games!
               </h3>
+              <GameButtons />
               <FlappyBirdGame />
             </div>
           </div>
@@ -151,14 +154,16 @@ export default function Home() {
             <div style={{
               textAlign: 'center',
               color: '#fff',
+              width: '100%',
             }}>
               <h3 style={{
                 fontSize: '1.5rem',
                 fontWeight: '700',
-                marginBottom: '1rem',
+                marginBottom: '1.5rem',
               }}>
-                🎮 Play Flappy Cards!
+                🎮 Play Games!
               </h3>
+              <GameButtons />
               <FlappyBirdGame />
             </div>
           </div>
