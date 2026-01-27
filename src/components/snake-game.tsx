@@ -788,7 +788,7 @@ export default function SnakeGame() {
           // Stackable - add to existing or create new
           setPermanentBuffs(prev => {
             const existing = prev.find(b => b.id === buff.id);
-            let updated;
+            let updated: ActiveBuff[];
             if (existing && buff.effect?.extraShield) {
               // Stack extra shield
               updated = prev.map(b => 
@@ -797,7 +797,7 @@ export default function SnakeGame() {
                   : b
               );
             } else {
-              updated = [...prev, { id: buff.id, type: 'permanent', effect: buff.effect }];
+              updated = [...prev, { id: buff.id, type: 'permanent' as BuffType, effect: buff.effect }];
             }
             localStorage.setItem('snakeGamePermanentBuffs', JSON.stringify(updated));
             return updated;
@@ -805,7 +805,7 @@ export default function SnakeGame() {
         } else {
           // Non-stackable permanent buffs (bomb_immunity)
           setPermanentBuffs(prev => {
-            const updated = [...prev, { id: buff.id, type: 'permanent', effect: buff.effect }];
+            const updated: ActiveBuff[] = [...prev, { id: buff.id, type: 'permanent' as BuffType, effect: buff.effect }];
             localStorage.setItem('snakeGamePermanentBuffs', JSON.stringify(updated));
             return updated;
           });
