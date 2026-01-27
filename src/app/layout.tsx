@@ -4,8 +4,8 @@ import { Providers } from "@/components/providers";
 import BackgroundVideo from "@/components/background-video";
 
 export const metadata: Metadata = {
-  title: "VibeCards - AI Flashcards",
-  description: "Generate flashcards from topics using AI",
+  title: "Game Hub - Flappy Bird & Snake",
+  description: "Play classic games: Flappy Bird and Snake with modern features",
 };
 
 export default function RootLayout({
